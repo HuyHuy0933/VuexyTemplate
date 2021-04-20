@@ -1,0 +1,204 @@
+﻿
+<section class="home-section spad pt-0">
+    <div class="container">
+        @(await Component.InvokeAsync("Slider"))
+        <div class="order-form mt-5">
+            <div class="row justify-content-lg-center">
+                <div class="col-sm-12 col-lg-10 col-xl-6">
+                    <h4 class="text-center mb-2">BÁO GIÁ TEM NHÃN STICKER ONLINE</h4>
+                    <div class="left-form p-2 mb-2">
+                        <h5 class="text-center">Vui lòng chọn lại chật liệu và nhập kích thước, số lượng</h5>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Chất Liêụ</span>
+                            </div>
+                            <select class="form-control classic">
+                                <option selected>Decal</option>
+                                <option>Giấy</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Kích Thước</span>
+                            </div>
+                            <input autocomplete="off" name="width" number-input maxlength="9" type="text" placeholder="ngang(mm)" class="form-control">
+                            <input autocomplete="off" name="height" number-input maxlength="9" type="text" placeholder="cao(mm)" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Số Lượng</span>
+                            </div>
+                            <input autocomplete="off" name="quantity" number-input maxlength="9" type="text" placeholder="nhập số lượng cần in" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Chọn Gia Công</span>
+                            </div>
+                            <select class="form-control classic">
+                                <option selected>Cán màng</option>
+                                <option>Không cán màng</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Chọn Bế</span>
+                            </div>
+                            <select class="form-control classic">
+                                <option selected>Bế thẳng</option>
+                                <option>Bế đặc biệt(hình tròn, hình khó)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="left-button d-flex justify-content-between flex-wrap">
+                        <button class="btn primary-btn mb-2">Upload file in</button>
+                        <button class="btn primary-btn mb-2">Xem mẫu online</button>
+                        <button class="btn primary-btn mb-2">Làm mới</button>
+                        <button class="btn primary-btn mb-2">Tiến hành đặt hàng</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-10 col-xl-6">
+                    <h4 class="text-center mb-2">THÔNG TIN ĐẶT HÀNG</h4>
+                    <div class="right-form p-2 mb-2">
+                        <h5 class="text-center">Vui lòng nhập thông tin để tiến hành đặt hàng online</h5>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Ghi Chú</span>
+                            </div>
+                            <textarea placeholder="" class="form-control"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Lấy Hàng Sau</span>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input value="2" type="radio" class="form-check-input" name="optradio">2 ngày
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input value="3" type="radio" class="form-check-input" name="optradio">3 ngày
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input value="4" type="radio" class="form-check-input" name="optradio">4 ngày
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input value="5" type="radio" class="form-check-input" name="optradio">5 ngày
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Mã Khuyến Mãi</span>
+                            </div>
+                            <input autocomplete="off" type="text" class="form-control">
+                            <button class="btn primary-btn ml-2">Áp dụng</button>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="">Thành Tiền</span>
+                            </div>
+                            <div class="price"><strong>0 (vnđ)</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="dashed mt-5 mb-2" />
+        <hr class="dashed mt-2 mb-5" />
+
+        <div class="banner">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/Temnhan.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Tem Nhãn</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/in-ky-thuat-so.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>In Kỹ Thuật Số</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/thu-vien-sticker.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Thư Viện Online</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/in-the-nhua.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Thẻ Nhựa</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/in-menu.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Thiệp Cưới</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/catalogue2.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Menu</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/in-danh-thiep-1.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Catologue</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/OnlineLibrary" class="single-banner">
+                        <img src="~/img/stickers/in-thiep-cuoi.jpg" alt="">
+                        <div class="inner-text">
+                            <h5>Danh Thiếp</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="dashed mt-5 mb-2" />
+        <hr class="dashed mt-2 mb-5" />
+
+        <div class="video">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single-banner">
+                        <img src="img/stickers/slider3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-banner">
+                        <img src="img/stickers/slider2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

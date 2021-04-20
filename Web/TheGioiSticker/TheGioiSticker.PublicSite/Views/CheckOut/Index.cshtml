@@ -1,0 +1,212 @@
+﻿<main>
+    <section class="checkout spad">
+        <form action="#" id="contact_form">
+            <div class="container customer-info">
+                <div class="row">
+                    <h4 class="col-sm-12 title mb-1">
+                        THÔNG TIN KHÁCH HÀNG
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 input-group radio-group gender">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="radio1">
+                            <label class="form-check-label" for="radio1">
+                                Anh
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="radio2">
+                            <label class="form-check-label" for="radio2">
+                                Chị
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3 col-sm-12">
+                        <input autocomplete="off" type="text" id="contact_form_name" class="form-control form-control-lg" placeholder="Họ Và Tên" required="required" data-error="Vui lòng nhập tên.">
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <input autocomplete="off" type="text" id="contact_form_phone" class="form-control form-control-lg" placeholder="Số điện thoại" required="required" data-error="Vui lòng nhập số đt.">
+                    </div>
+                </div>
+            </div>
+            <div class="container delivery-info">
+                <div class="row">
+                    <h4 class="col-sm-12 title">
+                        CHỌN CÁCH THỨC NHẬN HÀNG
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="delivery-address w-100">
+                        <div class="col-sm-12 input-group radio-group da-options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="method" id="radio1" value=".me-address" checked>
+                                <label class="form-check-label" for="radio1">
+                                    Giao hàng đến tôi
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="method" id="radio2" value=".me-address, .another-address">
+                                <label class="form-check-label" for="radio2">
+                                    Giao hàng đến người khác
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="method" id="radio3" value=".come-to-get-address">
+                                <label class="form-check-label" for="radio3">
+                                    Đến nhận hàng
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <!--me address panel-->
+                            <div class="row da-panel me-address active">
+                                <div class="col-sm-12">
+                                    <div class="container-fluid" style="background-color: #efefef">
+                                        <div class="row">
+                                            <p class="col-sm-12">Chọn địa chỉ để biết thời gian nhận hàng và phí vận chuyển (nếu có)</p>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <select class="form-control form-control-lg">
+                                                    <option value="0" selected>Chọn Thành Phố</option>
+                                                    <option value="1">Hồ Chí Minh</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <select class="form-control form-control-lg">
+                                                    <option value="0" selected>Chọn Quận / Huyện</option>
+                                                    <option value="1">Quận 7</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <select class="form-control form-control-lg">
+                                                    <option value="0" selected>Chọn Phường / Xã</option>
+                                                    <option value="1">Quận 7</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Điền số nhà, tên đường" required="required" data-error="Vui lòng nhập số nhà, tên đường.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--another address panel-->
+                            <div class="form-row da-panel another-address">
+                                <div class="col-md-6 col-sm-12">
+                                    <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Họ và tên người nhận thay" required="required" data-error="Vui lòng nhập họ và tên người nhận thay.">
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Số điện thoại người nhận thay" required="required" data-error="Vui lòng nhập số điện thoại người nhận thay.">
+                                </div>
+                            </div>
+                            <!--come to get panel-->
+                            <div class="row da-panel come-to-get-address">
+                                <div class="col-sm-12 ">
+                                    <div class="container-fluid" style="background-color: #efefef">
+                                        <div class="row">
+                                            <p class="col-sm-12">Địa chỉ: 118/15 Bàu Cát 2, Phường 12, Quận Tân Bình, Thành Phố Hồ Chí Minh</p>
+                                        </div>
+                                        <div class="row">
+                                            <p class="col-sm-12">Địa chỉ: 266/30 Hoàng Hoa Thám, Phường 12, Quận Tân Bình, Thành Phố Hồ Chí Minh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Yêu cầu khác (không bắt buộc)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="customer-suggestion w-100">
+                        <!--suggestion options-->
+                        <div class="col-sm-12 d-flex flex-column cs-options">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="instruction-suggestion">
+                                <label class="custom-control-label" for="instruction-suggestion">Hướng dẫn sử dụng, giải đáp thắc mắc sản phẩm</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="test-suggestion">
+                                <label class="custom-control-label" for="test-suggestion">Yêu cầu test màu ký duyệt mẫu trước khi sản xuất</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="bill-suggestion" onchange="checkToExportBill($event)">
+                                <label class="custom-control-label" for="bill-suggestion">Xuất hóa đơn công ty</label>
+                            </div>
+                        </div>
+                        <!--export bill panel-->
+                        <div class="col-sm-12">
+                            <div class="row export-bill">
+                                <div class="col-sm-12">
+                                    <div class="container-fluid" style="background-color: #efefef">
+                                        <div class="form-row">
+                                            <div class="col-sm-12">
+                                                <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Tên công ty" required="required" data-error="Vui lòng nhập tên công ty.">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-sm-12">
+                                                <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Địa chỉ công ty" required="required" data-error="Vui lòng nhập địa chỉ công ty.">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-sm-12">
+                                                <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Mã số thuế" required="required" data-error="Vui lòng nhập mã số thuế.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="d-flex justify-content-between total-price">
+                            <p>Tổng tiền</p>
+                            <p>2.500.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 d-flex justify-content-end">
+                        <button onClick="proccessOrder()" type="submit" class="btn order-button">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function (e) {
+        $('.delivery-info .da-options input').on('click', function () {
+            $('.delivery-info .da-panel').removeClass('active');
+
+            var daOption = $(this).val();
+
+            $(daOption).addClass('active');
+        })
+
+        $('.delivery-info .customer-suggestion #bill-suggestion').on('click', function () {
+            if ($(this).is(':checked')) {
+                $('.checkout .delivery-info .customer-suggestion .export-bill').addClass('active');
+            } else {
+                $('.checkout .delivery-info .customer-suggestion .export-bill').removeClass('active');
+            }
+        })
+    })
+
+    function proccessOrder() {
+        window.location.href = '/OrderSuccessfully';
+    }
+</script>

@@ -1,0 +1,72 @@
+﻿
+<!-- Shopping Cart Section Begin -->
+<section class="shopping-cart spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cart-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ảnh sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Kích thước</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th>Ghi chú</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cart-pic first-row"><img src="img/stickers/products/decal/decalkraft_1.jpg" alt=""></td>
+                                <td class="first-row">
+                                    Decal Kraft, cán bóng, bế đặc biệt
+                                </td>
+                                <td class="first-row">2x3cm</td>
+                                <td class="first-row">1000</td>
+                                <td class="first-row">1.250.000</td>
+                                <td class="first-row">Gấp</td>
+                                <td class="close-td first-row"><i class="ti-close"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="cart-pic first-row"><img src="img/stickers/products/decal/decalbe_1.jpg" alt=""></td>
+                                <td class="first-row">
+                                    Decal Bế, cán bóng, bế đặc biệt
+                                </td>
+                                <td class="first-row">3x4cm</td>
+                                <td class="first-row">1000</td>
+                                <td class="first-row">1.250.000</td>
+                                <td class="first-row">Gấp</td>
+                                <td class="close-td first-row"><i class="ti-close"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="first-row" colspan="4">
+                                    <h5>Tổng tiền</h5>
+                                </td>
+                                <td class="first-row">3.250.000</td>
+                                <td class="first-row" colspan="2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="offset-sm-8 col-sm-4">
+                        <div class="cart-buttons">
+                            <button onClick="checkOut()" class="btn blue-btn">TIẾP TỤC ĐẶT IN</button>
+                            <button onClick="checkOut()" class="btn orange-btn">TIẾN HÀNH ĐẶT HÀNG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script>
+    function checkOut() {
+        window.location.href = '/CheckOut';
+    }
+</script>
+<!-- Shopping Cart Section End -->
